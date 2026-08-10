@@ -29,6 +29,23 @@ h1 { font-size:34px; font-weight:700; letter-spacing:-.01em; }
 .t { font-size:17px; font-weight:700; margin-top:14px; line-height:1.45; }
 .n { font-size:14px; color:var(--muted); margin-top:4px; }
 .d { font-size:14px; color:#4a4a4a; margin-top:8px; line-height:1.6; }
+.back { display:inline-flex; align-items:center; gap:7px; font-size:14px; color:var(--muted);
+        text-decoration:none; border:1px solid var(--line); border-radius:6px; padding:7px 13px;
+        transition:border-color .15s, color .15s; }
+.back:hover { border-color:#999; color:var(--text); }
+.topnav { margin-bottom:24px; }
+.bottomnav { margin-top:48px; }
+#lb { position:fixed; inset:0; background:rgba(0,0,0,.92); display:none;
+      align-items:center; justify-content:center; z-index:50; }
+#lb.on { display:flex; }
+#lb img { max-width:94vw; max-height:82vh; object-fit:contain; }
+#lb .bar { position:fixed; top:0; left:0; right:0; display:flex; align-items:center; gap:14px;
+           padding:14px 18px; color:#fff; font-size:14px; background:rgba(0,0,0,.55); }
+#lb .cap { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#lb a, #lb button { color:#fff; background:none; border:1px solid rgba(255,255,255,.55);
+           border-radius:6px; padding:6px 12px; font-size:14px; font-family:inherit;
+           cursor:pointer; text-decoration:none; white-space:nowrap; }
+#lb a:hover, #lb button:hover { border-color:#fff; }
 footer { margin-top:64px; padding-top:22px; border-top:1px solid var(--line);
          font-size:13px; color:var(--muted); line-height:1.75; }
 footer a { color:var(--muted); }
@@ -40,7 +57,7 @@ footer a { color:var(--muted); }
 <body>
 <div class="wrap">
 
-<div class="crumb"><a href="../../">Lecture Archive</a> › AI, 역사, 사회: 기술과 사회의 얽힘</div>
+<div class="topnav"><a class="back" href="../../">← Lecture Archive</a></div>
 <h1>AI, 역사, 사회: 기술과 사회의 얽힘</h1>
 <div class="meta">2026학년도 1학기 · 수강 인원 10명 · 게시 9편<br>
 디지털역사학의 주요 방법론(GIS·텍스트 마이닝·통계 분석·네트워크 분석)과 AI 활용 방법을 익히고, 각자 설정한 역사적 질문을 프로젝트로 수행한다.</div>
@@ -117,13 +134,52 @@ footer a { color:var(--muted); }
 
 </div>
 
+<div class="bottomnav"><a class="back" href="../../">← 수업 목록으로 돌아가기</a></div>
+
 <footer>
 게시된 자료는 모두 제작 학생에게 공개 동의를 받은 것이며, <b>저작권은 각 자료를 제작한 학생에게 있습니다.</b>
-이 자료는 열람과 감상을 위해서만 공개합니다. 복제·배포·변형·2차 사용을 원하시는 경우 아래로 문의해 주십시오.<br>
-문의 · 게시 중단 요청: <a href="https://github.com/littlekg87/Lecture_Archive/issues">GitHub Issues</a> 또는 littlekg87 [at] gmail.com<br>
+여러 명이 함께 수행한 프로젝트는 공동저작물이며, 이용에는 참여자 전원의 동의가 필요합니다.
+포스터에 포함된 배경 지도·도표·서식 등 학생이 직접 제작하지 않은 부분의 권리는 각 원 권리자에게 있습니다.<br>
+이 자료는 열람과 감상을 위해서만 공개합니다. 복제·배포·변형·2차 사용을 원하시는 경우 아래로 문의해 주십시오.
+포스터에 인쇄된 학번과 소속은 원본 그대로 보이며, 개인 연락처는 가려서 게시합니다.<br>
+문의 · 게시 중단 요청: <a href="https://github.com/littlekg87/Lecture_Archive/issues">GitHub Issues</a> 또는 littlekg87 [at] gmail.com ·
+<a href="https://github.com/littlekg87/Lecture_Archive/blob/main/LICENSE">이용 조건</a><br>
 이 저장소는 개인이 운영하는 교육 기록이며, 소속 기관의 공식 자료가 아닙니다.
 </footer>
 
 </div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="작품 크게 보기">
+  <div class="bar">
+    <span class="cap" id="lbcap"></span>
+    <a id="lbraw" href="#" target="_blank" rel="noopener">원본 열기</a>
+    <button type="button" id="lbx">닫기 ✕</button>
+  </div>
+  <img id="lbimg" alt="">
+</div>
+<script>
+(function () {
+  var lb = document.getElementById('lb'), im = document.getElementById('lbimg'),
+      cap = document.getElementById('lbcap'), raw = document.getElementById('lbraw');
+  function open(href, label) {
+    im.src = href; im.alt = label; cap.textContent = label; raw.href = href;
+    lb.classList.add('on'); document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('on'); im.removeAttribute('src'); document.body.style.overflow = '';
+  }
+  document.querySelectorAll('a.card').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var img = a.querySelector('img'), n = a.querySelector('.n');
+      open(a.getAttribute('href'), (img ? img.alt : '') + (n ? ' — ' + n.textContent : ''));
+    });
+  });
+  document.getElementById('lbx').addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+
 </body>
 </html>
