@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지리정보시스템(GIS)과 문화역사지도 — Lecture Archive</title>
+<style>
+:root { --line:#e0e0e0; --muted:#6a6a6a; --text:#1a1a1a; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:system-ui,'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+       color:var(--text); background:#fff; line-height:1.7;
+       -webkit-font-smoothing:antialiased; }
+.wrap { max-width:1120px; margin:0 auto; padding:56px 28px 80px; }
+.crumb { font-size:14px; color:var(--muted); margin-bottom:10px; }
+.crumb a { color:var(--muted); text-decoration:none; }
+.crumb a:hover { color:var(--text); }
+h1 { font-size:34px; font-weight:700; letter-spacing:-.01em; }
+.meta { font-size:15px; color:var(--muted); margin-top:14px; }
+.note { font-size:14px; color:var(--muted); background:#f7f7f5; border-radius:8px;
+        padding:16px 18px; margin-top:22px; }
+.rule { height:1px; background:var(--line); margin:34px 0 30px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px 24px; }
+.card { display:block; text-decoration:none; color:inherit; }
+.thumb { border:1px solid var(--line); border-radius:8px; height:320px;
+         display:flex; align-items:center; justify-content:center;
+         overflow:hidden; background:#fff; transition:border-color .15s; }
+.thumb img { max-width:100%; max-height:100%; object-fit:contain; display:block; }
+.card:hover .thumb { border-color:#999; }
+.t { font-size:17px; font-weight:700; margin-top:14px; line-height:1.45; }
+.n { font-size:14px; color:var(--muted); margin-top:4px; }
+.d { font-size:14px; color:#4a4a4a; margin-top:8px; line-height:1.6; }
+footer { margin-top:64px; padding-top:22px; border-top:1px solid var(--line);
+         font-size:13px; color:var(--muted); line-height:1.75; }
+footer a { color:var(--muted); }
+@media (max-width:900px) { .grid { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:600px) { .grid { grid-template-columns:1fr; } .wrap { padding:36px 20px 60px; }
+                           h1 { font-size:25px; } .thumb { height:auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="crumb"><a href="../../">Lecture Archive</a> › 지리정보시스템(GIS)과 문화역사지도</div>
+<h1>지리정보시스템(GIS)과 문화역사지도</h1>
+<div class="meta">2026학년도 1학기 · 수강 인원 25명 · 게시 15편<br>GIS와 HGIS(Historical GIS)의 개념을 이해하고, QGIS 등의 도구로 공간 자료와 속성 자료를 결합하여 각자의 역사적·사회적 질문을 프로젝트로 수행한다.</div>
+
+<div class="note">학생이 제작한 학술포스터 원본입니다. 공개에 동의한 자료만 게시하였으며, 저작권은 각 제작 학생에게 있습니다. 여러 명이 함께 수행한 프로젝트는 참여자를 모두 표기하였습니다.</div>
+
+<div class="rule"></div>
+
+<div class="grid">
+
+<a class="card" href="works/kang-jiseong-etal.png">
+  <div class="thumb"><img src="works/kang-jiseong-etal.png" alt="GIS를 활용한 장애인 이동권의 공간적 불평등 분석"></div>
+  <div class="t">GIS를 활용한 장애인 이동권의 공간적 불평등 분석</div>
+  <div class="n">강지성, 이경진, 강영서</div>
+  <div class="d">인천 연수구 15개 행정동을 대상으로 지하철역 300·500m 도보권 버퍼와 동별 등록장애인 비율을 겹쳐, 장애인 비율이 중간 수준인 5개 동에 역세권 사각지대가 집중되어 있음을 확인하였다.</div>
+</a>
+
+<a class="card" href="works/kwak-wonyeong.png">
+  <div class="thumb"><img src="works/kwak-wonyeong.png" alt="전 세계 난민 발생의 공간적 분포 분석"></div>
+  <div class="t">전 세계 난민 발생의 공간적 분포 분석</div>
+  <div class="n">곽원영</div>
+  <div class="d">UNHCR 자료로 2015~2025년 난민 발생 상위 10개국을 5년 주기 도트맵으로 시각화하고, 발생국과 인접 수용국 사이의 이동 흐름을 함께 나타냈다.</div>
+</a>
+
+<a class="card" href="works/kim-donggeon.jpg">
+  <div class="thumb"><img src="works/kim-donggeon.jpg" alt="대한민국 전기차 급증에 따른 충전 인프라 불균형 문제"></div>
+  <div class="t">대한민국 전기차 급증에 따른 충전 인프라 불균형 문제</div>
+  <div class="n">김동건</div>
+  <div class="d">인천광역시의 전기차 등록 밀도와 충전소 분포를 대조하여 충전 사각지대를 도출하고, 입지 최적화와 수요 예측을 축으로 한 개선 방안을 제안하였다.</div>
+</a>
+
+<a class="card" href="works/kim-seonwoo-ko-seokhyeon.png">
+  <div class="thumb"><img src="works/kim-seonwoo-ko-seokhyeon.png" alt="서울시 외국인 주민 분포와 다문화지원시설의 공간적 접근성 분석"></div>
+  <div class="t">서울시 외국인 주민 분포와 다문화지원시설의 공간적 접근성 분석</div>
+  <div class="n">김선우, 고석현</div>
+  <div class="d">서울시 25개 자치구의 외국인 주민 밀집도와 다문화 지원시설 위치를 겹치고 반경 1km 도보권 버퍼를 적용하여, 밀집 지역일수록 시설이 부족한 사각지대를 확인하였다.</div>
+</a>
+
+<a class="card" href="works/kim-jinuk-etal.png">
+  <div class="thumb"><img src="works/kim-jinuk-etal.png" alt="인구감소지역에서 고령인구의 공공의료시설 접근성 개선"></div>
+  <div class="t">인구감소지역에서 고령인구의 공공의료시설 접근성 개선</div>
+  <div class="n">김진욱, 이민희, 이찬영, 홍수아</div>
+  <div class="d">인구감소지역의 65세 이상 인구와 전국 지역보건의료기관 분포를 QGIS로 겹쳐, 고령인구가 많은 지역일수록 공공의료시설 밀도가 낮아지는 불균형을 확인하였다.</div>
+</a>
+
+<a class="card" href="works/park-mingyo-lee-hanui.png">
+  <div class="thumb"><img src="works/park-mingyo-lee-hanui.png" alt="QGIS를 통한 서울시 노인 복지관 접근성 보완"></div>
+  <div class="t">QGIS를 통한 서울시 노인 복지관 접근성 보완</div>
+  <div class="n">박민교, 이하늬</div>
+  <div class="d">서울시 자치구별 고령인구와 노인복지관 수를 대조하고 복지관 반경 1km 버퍼와 지하철역 위치를 함께 나타내어, 영등포구·관악구·강북구의 공급 부족을 지적하였다.</div>
+</a>
+
+<a class="card" href="works/park-junyeong.png">
+  <div class="thumb"><img src="works/park-junyeong.png" alt="QGIS를 활용한 교통사고 분석 및 전국단위 특별관리구역 설정"></div>
+  <div class="t">QGIS를 활용한 교통사고 분석 및 전국단위 특별관리구역 설정</div>
+  <div class="n">박준영</div>
+  <div class="d">250개 행정구역의 교통사고 건수와 교통량 자료에 Getis-Ord Gi*와 LISA 분석을 적용하여 통계적으로 유의한 핫스팟을 도출하고, 특별관리구역 설정을 제안하였다.</div>
+</a>
+
+<a class="card" href="works/seo-gahyeon.png">
+  <div class="thumb"><img src="works/seo-gahyeon.png" alt="난민은 어디로 가는가?"></div>
+  <div class="t">난민은 어디로 가는가?</div>
+  <div class="n">서가현</div>
+  <div class="d">UNHCR 난민 통계 119,437건을 QGIS와 kepler.gl로 분석하여 이동 경로와 수용국 분포를 시각화하고, 수용국의 1인당 GDP와 난민 수용 규모가 역의 관계를 보이는 구조를 확인하였다.</div>
+</a>
+
+<a class="card" href="works/yun-nangyeong.png">
+  <div class="thumb"><img src="works/yun-nangyeong.png" alt="서울시 교통소외지역·소외계층에 대한 포용사회 전략 제안"></div>
+  <div class="t">서울시 교통소외지역·소외계층에 대한 포용사회 전략 제안</div>
+  <div class="n">윤난경</div>
+  <div class="d">서울시 공공자전거 대여소 분포를 대중교통 접근성 및 소외계층 분포와 대조하여, 도심과 외곽 사이의 공급 격차를 공간적 불일치 문제로 정리하고 개선 방향을 제안하였다.</div>
+</a>
+
+<a class="card" href="works/lee-minhyeong.png">
+  <div class="thumb"><img src="works/lee-minhyeong.png" alt="방글라데시 다카 위생 인프라의 공간적 불평등 분석"></div>
+  <div class="t">방글라데시 다카 위생 인프라의 공간적 불평등 분석</div>
+  <div class="n">이민형</div>
+  <div class="d">OpenStreetMap에서 다카의 공중화장실 621곳을 추출해 밀도 지도를 만들고 빈민가 인구 분포와 대조하여, 위생 인프라의 공간적 불일치를 확인한 뒤 ODA 투입 우선지역을 제안하였다.</div>
+</a>
+
+<a class="card" href="works/lee-hyeonjeong.png">
+  <div class="thumb"><img src="works/lee-hyeonjeong.png" alt="QGIS로 보는 인천의 맛집 세대교체"></div>
+  <div class="t">QGIS로 보는 인천의 맛집 세대교체</div>
+  <div class="n">이현정</div>
+  <div class="d">인천 원도심의 노포와 신도시의 신흥 상권 위치를 좌표로 정리하고 지하철 노선과 겹쳐, 두 상권의 형성 기반이 골목 중심과 역세권 중심으로 갈리는 양상을 확인하였다.</div>
+</a>
+
+<a class="card" href="works/jang-taegyeong.png">
+  <div class="thumb"><img src="works/jang-taegyeong.png" alt="서울시 이주민 밀집 지역과 가족지원센터 간의 접근성 진단"></div>
+  <div class="t">서울시 이주민 밀집 지역과 가족지원센터 간의 접근성 진단</div>
+  <div class="n">장태경</div>
+  <div class="d">서울시 동별 외국인 등록 현황과 다문화가족지원센터 위치를 kepler.gl의 점·선 레이어로 연결하여 거리별로 등급화하고, 접근성이 크게 떨어지는 외곽 지역을 도출하였다.</div>
+</a>
+
+<a class="card" href="works/jeong-seunghyeon.png">
+  <div class="thumb"><img src="works/jeong-seunghyeon.png" alt="수도권 현충시설의 공간적 분포 및 시민 접근성 분석"></div>
+  <div class="t">수도권 현충시설의 공간적 분포 및 시민 접근성 분석</div>
+  <div class="n">정승현</div>
+  <div class="d">수도권 현충시설의 위치와 대중교통망을 대조하여 시민 접근성을 분석하고, 서울 이외 지역의 시설이 교통망에서 떨어져 있는 정도를 확인하였다.</div>
+</a>
+
+<a class="card" href="works/jo-yunbin.png">
+  <div class="thumb"><img src="works/jo-yunbin.png" alt="다문화가구원의 시공간 변화와 대중교통 접근성의 공간적 불일치"></div>
+  <div class="t">다문화가구원의 시공간 변화와 대중교통 접근성의 공간적 불일치</div>
+  <div class="n">조윤빈</div>
+  <div class="d">2016~2024년 인천 군·구별 다문화가구원 변화를 추적하고, 2024년 연수구를 대상으로 버스·도시철도 접근권과 가족센터 연결을 지수화하여 수요와 접근성의 불일치 유형을 분류하였다.</div>
+</a>
+
+<a class="card" href="works/choi-seongmin.png">
+  <div class="thumb"><img src="works/choi-seongmin.png" alt="GIS를 활용한 서울 5대 궁궐의 지하철 접근성 분석"></div>
+  <div class="t">GIS를 활용한 서울 5대 궁궐의 지하철 접근성 분석</div>
+  <div class="n">최성민</div>
+  <div class="d">서울 5대 궁궐과 인근 지하철역의 좌표를 정리하고 kepler.gl로 연결하여, 궁궐별 지하철 접근성의 차이를 비교하였다.</div>
+</a>
+
+</div>
+
+<footer>
+게시된 자료는 모두 제작 학생에게 공개 동의를 받은 것이며, <b>저작권은 각 자료를 제작한 학생에게 있습니다.</b>
+이 자료는 열람과 감상을 위해서만 공개합니다. 복제·배포·변형·2차 사용을 원하시는 경우 아래로 문의해 주십시오.<br>
+문의 · 게시 중단 요청: <a href="https://github.com/littlekg87/Lecture_Archive/issues">GitHub Issues</a> 또는 littlekg87 [at] gmail.com<br>
+이 저장소는 개인이 운영하는 교육 기록이며, 소속 기관의 공식 자료가 아닙니다.
+</footer>
+
+</div>
+</body>
+</html>
