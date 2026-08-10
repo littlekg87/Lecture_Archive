@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지리정보시스템(GIS)과 역사지도 — Lecture Archive</title>
+<style>
+:root { --line:#e0e0e0; --muted:#6a6a6a; --text:#1a1a1a; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:system-ui,'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+       color:var(--text); background:#fff; line-height:1.7;
+       -webkit-font-smoothing:antialiased; }
+.wrap { max-width:1120px; margin:0 auto; padding:56px 28px 80px; }
+.crumb { font-size:14px; color:var(--muted); margin-bottom:10px; }
+.crumb a { color:var(--muted); text-decoration:none; }
+.crumb a:hover { color:var(--text); }
+h1 { font-size:34px; font-weight:700; letter-spacing:-.01em; }
+.meta { font-size:15px; color:var(--muted); margin-top:14px; }
+.note { font-size:14px; color:var(--muted); background:#f7f7f5; border-radius:8px;
+        padding:16px 18px; margin-top:22px; }
+.rule { height:1px; background:var(--line); margin:34px 0 30px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px 24px; }
+.card { display:block; text-decoration:none; color:inherit; }
+.thumb { border:1px solid var(--line); border-radius:8px; height:320px;
+         display:flex; align-items:center; justify-content:center;
+         overflow:hidden; background:#fff; transition:border-color .15s; }
+.thumb img { max-width:100%; max-height:100%; object-fit:contain; display:block; }
+.card:hover .thumb { border-color:#999; }
+.t { font-size:17px; font-weight:700; margin-top:14px; line-height:1.45; }
+.n { font-size:14px; color:var(--muted); margin-top:4px; }
+.d { font-size:14px; color:#4a4a4a; margin-top:8px; line-height:1.6; }
+.tag { display:inline-block; font-size:12px; color:var(--muted); border:1px solid var(--line);
+       border-radius:4px; padding:1px 7px; margin-left:6px; vertical-align:2px; }
+footer { margin-top:64px; padding-top:22px; border-top:1px solid var(--line);
+         font-size:13px; color:var(--muted); line-height:1.75; }
+footer a { color:var(--muted); }
+@media (max-width:900px) { .grid { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:600px) { .grid { grid-template-columns:1fr; } .wrap { padding:36px 20px 60px; }
+                           h1 { font-size:27px; } .thumb { height:auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="crumb"><a href="../../">Lecture Archive</a> › 지리정보시스템(GIS)과 역사지도</div>
+<h1>지리정보시스템(GIS)과 역사지도</h1>
+<div class="meta">2025학년도 2학기 · 수강 인원 8명 · 게시 7편<br>
+GIS와 HGIS(Historical GIS)의 개념을 이해하고, QGIS를 이용해 역사 데이터를 공간적으로 시각화하여 각자의 역사적 질문을 분석하는 프로젝트를 수행한다.</div>
+
+<div class="note">공개에 동의한 자료만 게시하였습니다. 학술포스터 6편은 학생이 제작한 원본이며,
+마지막 1편은 발표자료 형태로 제출되어 저장소 운영자가 소개 자료로 정리한 것입니다.
+일부 자료에서 개인 연락처는 가려서 게시하였습니다. 저작권은 각 제작 학생에게 있습니다.</div>
+
+<div class="rule"></div>
+
+<div class="grid">
+
+<a class="card" href="works/lee-yoon.png">
+  <div class="thumb"><img src="works/lee-yoon.png" alt="QGIS를 활용한 마포구에 내 집 찾기"></div>
+  <div class="t">QGIS를 활용한 마포구에 내 집 찾기</div>
+  <div class="n">이윤</div>
+  <div class="d">마포구 임대 매물과 지하철역 사이의 거리를 QGIS로 계산하고 월세·거리·신축 여부를 점수화하여, 역과 가까울수록 가격이 높아지는 관계를 확인하였다.</div>
+</a>
+
+<a class="card" href="works/kim-sio.png">
+  <div class="thumb"><img src="works/kim-sio.png" alt="제국주의 시기 영국의 아프리카 식민지 변화"></div>
+  <div class="t">제국주의 시기 영국의 아프리카 식민지 변화</div>
+  <div class="n">김시오</div>
+  <div class="d">영국의 아프리카 식민지를 획득 연도와 함께 폴리곤 자료로 구축하고 시계열 지도로 구현하여, 북부에서 남부로 이어지는 종단 방향의 확장을 확인하였다.</div>
+</a>
+
+<a class="card" href="works/nam-gihyeon.png">
+  <div class="thumb"><img src="works/nam-gihyeon.png" alt="Q-GIS를 이용해 국내 여행지 물가 차이 비교하기"></div>
+  <div class="t">Q-GIS를 이용해 국내 여행지 물가 차이 비교하기</div>
+  <div class="n">남기현</div>
+  <div class="d">국내 인기 여행지 7곳의 성수기와 비수기 숙박 가격을 직접 집계하여 비율로 환산하고, 지역별 물가 변동 폭을 지도에 비교하여 나타냈다.</div>
+</a>
+
+<a class="card" href="works/kwon-yongbin.png">
+  <div class="thumb"><img src="works/kwon-yongbin.png" alt="GIS로 보는 우리나라 부동산 체납데이터"></div>
+  <div class="t">GIS로 보는 우리나라 부동산 체납데이터</div>
+  <div class="n">권용빈</div>
+  <div class="d">국세청 고액 체납자 자료를 시도별로 집계하여 kepler.gl로 3차원 시각화하고, 1인당 체납액과 시기별 추세를 경제 상황과 함께 해석하였다.</div>
+</a>
+
+<a class="card" href="works/jo-wonseok.png">
+  <div class="thumb"><img src="works/jo-wonseok.png" alt="나폴레옹 전쟁시기 주요 전투의 GIS화"></div>
+  <div class="t">나폴레옹 전쟁시기 주요 전투의 ‘GIS화’</div>
+  <div class="n">조원석</div>
+  <div class="d">마렝고·아우스터리츠·보로디노·라이프치히·워털루 전투의 배치 모식도를 지오레퍼런싱하여 위성지도 위에 올리고, 지형과 전술의 관계를 검토하였다.</div>
+</a>
+
+<a class="card" href="works/byeon-hyejin.jpg">
+  <div class="thumb"><img src="works/byeon-hyejin.jpg" alt="장애 학생의 통학 불평등에 대한 AI·데이터 기반 포용사회 전략 제안"></div>
+  <div class="t">장애 학생의 통학 불평등에 대한 AI·데이터 기반 포용사회 전략 제안</div>
+  <div class="n">변혜진</div>
+  <div class="d">특수학교와 일반학교의 통학 시간 격차를 정리하고 학교 입지와 접근성을 히트맵으로 시각화하여, 입지 최적화와 위험 분석을 축으로 한 개선 방안을 제안하였다.</div>
+</a>
+
+<a class="card" href="works/kim-junhan.png">
+  <div class="thumb"><img src="works/kim-junhan.png" alt="초기 중세 유럽의 교역과 경제권 형성 양상"></div>
+  <div class="t">초기 중세 유럽의 교역과 경제권 형성 양상<span class="tag">소개 자료</span></div>
+  <div class="n">김준한</div>
+  <div class="d">8~9세기 유럽의 교역 거점과 교역망을 지도로 옮겨, 북해·발트해권과 지중해권의 공간 구조가 어떻게 달랐는지 비교하였다.</div>
+</a>
+
+</div>
+
+<footer>
+게시된 자료는 모두 제작 학생에게 공개 동의를 받은 것이며, <b>저작권은 각 자료를 제작한 학생에게 있습니다.</b>
+이 자료는 열람과 감상을 위해서만 공개합니다. 복제·배포·변형·2차 사용을 원하시는 경우 아래로 문의해 주십시오.<br>
+문의 · 게시 중단 요청: <a href="https://github.com/littlekg87/Lecture_Archive/issues">GitHub Issues</a> 또는 littlekg87 [at] gmail.com<br>
+이 저장소는 개인이 운영하는 교육 기록이며, 소속 기관의 공식 자료가 아닙니다.
+</footer>
+
+</div>
+</body>
+</html>
