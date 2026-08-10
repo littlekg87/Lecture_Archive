@@ -101,5 +101,6 @@ Git의 구조상 파일을 삭제해도 과거 기록에는 남을 수 있습니
 
 - GitHub Issues: https://github.com/littlekg87/Lecture_Archive/issues
 - 이메일: littlekg87 [at] gmail.com
+- 운영자 GitHub: https://github.com/littlekg87
 
 이용 허락 문의, 게시 중단 요청, 소개 자료의 내용 수정 요청 모두 위 창구로 받습니다.

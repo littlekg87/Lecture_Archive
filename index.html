@@ -13,6 +13,11 @@ body { font-family:system-ui,'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
 .wrap { max-width:1120px; margin:0 auto; padding:72px 28px 80px; }
 h1 { font-size:38px; font-weight:700; letter-spacing:-.01em; }
 .sub { font-size:16px; color:var(--muted); margin-top:14px; max-width:640px; }
+.back { display:inline-flex; align-items:center; gap:7px; font-size:14px;
+        color:var(--muted); text-decoration:none; border:1px solid var(--line);
+        border-radius:6px; padding:7px 13px; transition:border-color .15s, color .15s; }
+.back:hover { border-color:#999; color:var(--text); }
+.topnav { margin-top:22px; display:flex; gap:8px; flex-wrap:wrap; }
 .rule { height:1px; background:var(--line); margin:40px 0 34px; }
 h2 { font-size:15px; font-weight:700; color:var(--muted); letter-spacing:.04em; }
 .list { margin-top:20px; display:flex; flex-direction:column; gap:2px; }
@@ -38,6 +43,8 @@ footer a { color:var(--muted); }
 <h1>Lecture Archive</h1>
 <div class="sub">수업에서 나온 학생들의 학술포스터와 결과물을 모아 둔 곳입니다.
 공개에 동의한 자료만 게시하며, 저작권은 각 자료를 제작한 학생에게 있습니다.</div>
+
+<div class="topnav"><a class="back" href="https://github.com/littlekg87/Lecture_Archive">GitHub 저장소</a><a class="back" href="https://github.com/littlekg87">운영자 github.com/littlekg87</a></div>
 
 <div class="rule"></div>
 
@@ -76,6 +83,7 @@ footer a { color:var(--muted); }
 이 자료는 열람과 감상을 위해서만 공개합니다. 복제·배포·변형·2차 사용을 원하시는 경우 아래로 문의해 주십시오.<br>
 문의 · 게시 중단 요청: <a href="https://github.com/littlekg87/Lecture_Archive/issues">GitHub Issues</a> 또는 littlekg87 [at] gmail.com ·
 <a href="https://github.com/littlekg87/Lecture_Archive/blob/main/LICENSE">이용 조건</a><br>
+저장소: <a href="https://github.com/littlekg87/Lecture_Archive">github.com/littlekg87/Lecture_Archive</a> · 운영자: <a href="https://github.com/littlekg87">github.com/littlekg87</a><br>
 이 저장소는 개인이 운영하는 교육 기록이며, 소속 기관의 공식 자료가 아닙니다.
 </footer>
 

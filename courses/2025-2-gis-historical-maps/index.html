@@ -35,8 +35,8 @@ h1 { font-size:34px; font-weight:700; letter-spacing:-.01em; }
         text-decoration:none; border:1px solid var(--line); border-radius:6px; padding:7px 13px;
         transition:border-color .15s, color .15s; }
 .back:hover { border-color:#999; color:var(--text); }
-.topnav { margin-bottom:24px; }
-.bottomnav { margin-top:48px; }
+.topnav { margin-bottom:24px; display:flex; gap:8px; flex-wrap:wrap; }
+.bottomnav { margin-top:48px; display:flex; gap:8px; flex-wrap:wrap; }
 #lb { position:fixed; inset:0; background:rgba(0,0,0,.92); display:none;
       align-items:center; justify-content:center; z-index:50; }
 #lb.on { display:flex; }
@@ -59,7 +59,7 @@ footer a { color:var(--muted); }
 <body>
 <div class="wrap">
 
-<div class="topnav"><a class="back" href="../../">← Lecture Archive</a></div>
+<div class="topnav"><a class="back" href="../../">← Lecture Archive</a><a class="back" href="https://github.com/littlekg87/Lecture_Archive">GitHub 저장소</a></div>
 <h1>지리정보시스템(GIS)과 역사지도</h1>
 <div class="meta">2025학년도 2학기 · 수강 인원 8명 · 게시 7편<br>
 GIS와 HGIS(Historical GIS)의 개념을 이해하고, QGIS를 이용해 역사 데이터를 공간적으로 시각화하여 각자의 역사적 질문을 분석하는 프로젝트를 수행한다.</div>
@@ -123,7 +123,7 @@ GIS와 HGIS(Historical GIS)의 개념을 이해하고, QGIS를 이용해 역사 
 
 </div>
 
-<div class="bottomnav"><a class="back" href="../../">← 수업 목록으로 돌아가기</a></div>
+<div class="bottomnav"><a class="back" href="../../">← 수업 목록으로 돌아가기</a><a class="back" href="https://github.com/littlekg87/Lecture_Archive">GitHub 저장소</a></div>
 
 <footer>
 게시된 자료는 모두 제작 학생에게 공개 동의를 받은 것이며, <b>저작권은 각 자료를 제작한 학생에게 있습니다.</b>
@@ -133,6 +133,7 @@ GIS와 HGIS(Historical GIS)의 개념을 이해하고, QGIS를 이용해 역사 
 포스터에 인쇄된 학번과 소속은 원본 그대로 보이며, 개인 연락처는 가려서 게시합니다.<br>
 문의 · 게시 중단 요청: <a href="https://github.com/littlekg87/Lecture_Archive/issues">GitHub Issues</a> 또는 littlekg87 [at] gmail.com ·
 <a href="https://github.com/littlekg87/Lecture_Archive/blob/main/LICENSE">이용 조건</a><br>
+저장소: <a href="https://github.com/littlekg87/Lecture_Archive">github.com/littlekg87/Lecture_Archive</a> · 운영자: <a href="https://github.com/littlekg87">github.com/littlekg87</a><br>
 이 저장소는 개인이 운영하는 교육 기록이며, 소속 기관의 공식 자료가 아닙니다.
 </footer>
 
